@@ -19,11 +19,11 @@ sizeForm.addEventListener('submit', function (evt) {
   width = sizeForm.elements["width"].value;
   // console.log(width);
   // console.log(height);
-  makeGrid();
+  makeGrid(height,width);
   console.log(Color);
 });
 // makeGrid creates the grid as table of h rows × w columns...
-function makeGrid() {
+function makeGrid(h,w) {
   // Your code goes here!
   // Select the table element...
   // Clear the Table before creating a new one with the given height and width...
@@ -32,9 +32,9 @@ function makeGrid() {
   }
 
   let rows = '';
-  for (let i = 1; i <= height; i++) {
+  for (let i = 1; i <= h; i++) {
     rows = document.createElement('tr');
-    for (let j = 1; j <= width; j++) {
+    for (let j = 1; j <= w; j++) {
       let columns = document.createElement('td');
       rows.appendChild(columns);
     }
@@ -47,3 +47,7 @@ Table.addEventListener('click',function(evt){
   if(evt.target.nodeName=='TD'){
 console.log(evt.target.setAttribute('style','background-color:'+Color));
 }});
+
+document.addEventListener('DOMContentLoader',  makeGrid(10,10),true);
+document.addEventListener('DOMContentLoader',  alert("Welcome!\nChoose the grid size and start drawing!"),false);
+ 
