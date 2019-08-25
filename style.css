@@ -1,0 +1,73 @@
+body{
+  width:80%;
+  background: url("img/circuit.png") center center repeat ;
+  margin: auto;
+  margin-top:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+#container{
+  background: #111111;
+  color: #999999; 
+}
+h1 {
+font-size: 100px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#subHeader{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Comic Sans MS',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+form,label{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+#submitBtn{
+font: bold 30px impact,sans-serif;
+width: fit-content;
+}
+#submitBtn:hover{
+background-color: #a11;
+color:white;
+}
+#pickColor{
+  text-align: center;
+}
+input[type='number']{
+  width:6em;
+  font-family: 'Comic Sans MS',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+input[type='color']{
+height: 30px;
+width: 30px;
+margin:auto;
+
+}
+td,tr{
+  height:20px;
+  width:20px;
+  border:1px solid gray;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+table{
+  text-align: center;
+  align-content: center;
+  margin: auto;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: white;
+}
+#gridDiv{
+  text-align: center;
+}
